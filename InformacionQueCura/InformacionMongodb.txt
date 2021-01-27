@@ -1,3 +1,0 @@
-cada vez que se cree un nuevo objeto que agregar a una  collecction de la base de datos en mongo, recuerda crear antes desde moonguse el scheeme y compilarlo, para que todo lo que agregues posteriormente se cree con ese mismo y encuentre los atributos correctamente.
-
-NOTA: EN LA BASE DE DATOS LA BOTELLA MORADA ESTA MAL Y ESTA PUESTA COMO AZULCLARO
