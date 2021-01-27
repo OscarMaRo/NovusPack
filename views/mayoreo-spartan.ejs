@@ -1,0 +1,73 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/orders.css">
+	<link rel="stylesheet" href="/css/product.css">
+	<link rel="stylesheet" href="/css/forms.css">
+
+	<script src='https://smtpjs.com/v3/smtp.js'></script>
+	
+    
+    
+    <body>	
+		
+        <%- include('includes/navigation.ejs') %>
+        <main>
+			
+			<!--<form class="product-form">
+				<% for (let product of prods) { %>				
+				<% if (product != undefined) { %>
+					<ul class="orders">
+						<li class="orders__item">
+							<div class="orders__products-item">
+								<div class="centered">
+									<h1> <%= product.color %></h1>
+									<label for="cantidad">Cantidad</label>
+								</div>
+
+							</div>
+							
+						</li>
+					</ul>
+				<% } %>
+			<% } %>
+				
+			</form>-->
+			
+			<div class="centered">
+				<br><br>
+				<button class="btn" id="subtract">-</button>
+				<input id="input" type="number" step="100" value="0"/>
+				<button class="btn" id="add">+</button>
+				<script src='/js/main.js'></script>
+			</div>
+			
+			<div class="centered">
+				<form action="/mayoreo-spartan" method="POST">
+				<div>
+					<h4>From:</h4><input name="form" id="form" type='text' value="from" size="30"/>
+					
+					<h4>To:</h4><input name="name" id="name" type='text' value="name" size="30"/>
+					<br><br>
+					
+					<h4>Message:</h4>
+					<textarea name="message" id="message" rows="10" cols="55">Hola buen día,
+								Quisiera ordenar n cantidad de botellas spartan. De diferentes colores y la térmica también.
+						
+								Gracias,
+								name
+					</textarea>
+					<br><br>
+				</div>
+				
+				
+					<input type='submit' value='Send mail' onclick='send()'/><br><br>
+					<script src='/js/main.js'></script>
+					<hr>
+				</form>
+			
+			</div>
+						
+        </main>
+		
+<%- include('includes/end.ejs') %>
+		
+		

@@ -1,0 +1,147 @@
+/* este es para movil y phablet */
+@media  screen and (max-width: 575px) {
+
+.Titulo{
+	/* font-family: 'Bitter', serif; */
+    background: #1b3d6b;	
+	font-size: 50px;
+	padding-left:6vw;
+	margin-top:5vh;
+	color:white;
+}
+
+body{
+	background-color:#e0e0e0;
+}
+
+.texto{
+	margin-bottom:3vh;
+	margin-top:3vh;
+	width:90vw;
+	margin-left:5vw;
+	font-size:20px;
+}
+
+.image{
+	width:100vw;
+	border: solid #1b3d6b 10px;
+	border-radius:15px;
+	height:30vh;
+	margin-top:5vh;
+}
+
+}
+
+/* ESCRITORIO SUPEEERRRRR GRANDE */
+@media only screen and (min-width:1200px) and (max-width:1550px){
+
+.Titulo{
+	/* font-family: 'Bitter', serif; */
+    background: #1b3d6b;	
+	font-size: 80px;
+	padding-left:6vw;
+	margin-top:5vh;
+	color:white;
+}
+
+body{
+	background-color:#e0e0e0;
+}
+
+.texto{
+	margin-bottom:3vh;
+	margin-top:3vh;
+	width:80vw;
+	margin-left:10vw;
+	font-size:25px;
+}
+
+.image{
+	width:70vw;
+	margin-left:15vw;
+	border: solid #1b3d6b 10px;
+	border-radius:15px;
+	margin-top:3vh;
+}
+	
+}
+
+/* monitor */
+@media only screen and (min-width:1551px){
+
+.Titulo{
+	/* font-family: 'Bitter', serif; */
+    background: #1b3d6b;	
+	font-size: 80px;
+	padding-left:6vw;
+	margin-top:5vh;
+	color:white;
+}
+
+body{
+	background-color:#e0e0e0;
+}
+
+.texto{
+	margin-bottom:3vh;
+	margin-top:3vh;
+	width:70vw;
+	margin-left:15vw;
+	font-size:30px;
+}
+
+.image{
+	width:70vw;
+	margin-left:15vw;
+	border: solid #1b3d6b 10px;
+	border-radius:15px;
+	margin-top:5vh;
+}
+	
+}
+
+/* Escritorio grandote */
+@media only screen and (min-width:992px) and (max-width:1199px){
+
+.Titulo{
+	/* font-family: 'Bitter', serif; */
+    background: #1b3d6b;	
+	font-size: 80px;
+	padding-left:6vw;
+	margin-top:5vh;
+	color:white;
+}
+
+body{
+	background-color:#e0e0e0;
+}
+
+.texto{
+	margin-bottom:3vh;
+	margin-top:3vh;
+	width:70vw;
+	margin-left:15vw;
+	font-size:30px;
+}
+
+.image{
+	width:70vw;
+	margin-left:15vw;
+	border: solid #1b3d6b 10px;
+	border-radius:15px;
+}
+	
+}
+/* Escritorio pequenio y tabletas */
+@media only screen and (min-width:768px) and (max-width:991px){
+	
+}
+/* TELEFONOS NORMALES NO ENANOS COMO EL DE SANTI Y ALAN */
+@media only screen and (min-width: 576px) and (max-width:991px) {
+	
+}
+
+/* Escritorio pequenio y tabletas */
+@media only screen and (min-width:576px) and (max-width:767px){
+	
+}

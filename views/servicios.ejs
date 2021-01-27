@@ -1,0 +1,36 @@
+<head>
+	<%- include('includes/head.ejs') %>
+    <script src='https://smtpjs.com/v3/smtp.js'></script>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="/css/servicios.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <%- include("includes/navigation.ejs") %>
+
+    <div class="row main">
+		<div class="servicio Fab">
+			<h1 class="Titulo">
+				Servicio 1
+			</h1>
+			<a href="/Servicios/Fabricacion">
+				<button>
+					Ir a Servicio 1
+				</button>
+			</a>
+		</div>
+		<div class="servicio Imp">
+			<h1 class="Titulo">
+				Servicio 2
+			</h1>
+			<a href="/Servicios/Impresion">
+				<button>
+					Ir a Servicio 2
+				</button>
+			</a>
+		</div>
+	</div>
+</body>
+
+
+<%- include('./footer.ejs') %>
+	

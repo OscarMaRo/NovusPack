@@ -1,0 +1,1788 @@
+.disclaimerPaddingEspecial{
+	margin-top:10vh;	
+}
+/* este es para movil y phablet */
+@media  screen and (max-width: 575px) {
+	* {
+  box-sizing: border-box;
+}
+
+#payment-form{
+    background: #e0e0e0;
+	font-size: 10px;
+	font-family: 'Red Rose';
+}
+
+.infoDePedido
+{
+	border-radius: 15px;
+	/* display:block; */
+	margin-top:-2vh;
+	margin-left:1vh;
+	padding-right:-15vh;
+	margin-bottom:2vh;
+	background: #e0e0e0;
+	font-size: 25px;
+	font-family: 'Red Rose', cursive;
+	width:87vw;
+	/* height:70vh; */
+}
+
+.datosEspecificos{
+	padding-left:3vw;
+	width: 90%;
+	font-size: 17px;
+}
+
+.TituloNoEspecifico{
+	float:left;
+	background-color:#01194b;
+	color: white !important;
+	padding-left:16vh;
+	font-size:25px !important;
+}
+
+.nombreCLientes{
+	 border-style: solid;
+	 border-width: 2px;
+}
+
+.disclaimer1{
+	width:90vw;
+	font-size:20px;
+	margin-top:15px;
+}
+	
+.disclaimerPaddingEspecial{
+	margin:5vh;	
+}
+
+.generalesInfoPedidoHijos{
+ padding-top:15px;
+ padding-bottom:15px;	
+ font-family: 'Red Rose';	
+}
+
+.tituloTarjeta{
+	font-size:29px;
+	padding:2.5vw;
+}
+
+.disclaimer{
+	background: #e0e0e0;
+	font-size: 20px;
+	font-family: 'Red Rose';
+	display:block;
+	width:90vw;
+	border-radius: 15px;
+}
+
+.textoDisclaimer{
+	padding-left:3vw;
+	font-size: 17px;
+	margin-top:-3vh;
+}
+
+.izquierda{
+	display:block;
+	margin-top:5vh;
+	margin-left:7vw;
+	margin-right:0;
+}
+
+.DireccionPedido{
+	border-left-style:solid;
+	border-right-style: solid;
+	padding-bottom:-15px;	
+	border-width: 2px;
+	border-color:#01194b;
+}
+
+.codigoPostal{
+	border-style: solid;
+	border-width: 2px;
+	border-color:#01194b;
+}
+
+.correoCLiente{
+	border-bottom-style: solid;
+	border-left-style:solid;
+	border-right-style: solid;	
+	border-width: 2px;
+	border-color:#01194b;
+}
+
+.fechaPedido{
+	border-bottom-style: solid;
+	border-left-style:solid;
+	border-right-style: solid;	
+	border-width: 2px;
+	border-color:#01194b;
+}
+
+body {
+  background-color:#a7a9ac;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  /* display: flex; */
+  justify-content: center;
+  align-content: center;
+}
+
+form {
+  width: 90vw;
+}
+
+input {
+  border-radius: 6px;
+  margin-bottom: 6px;
+  padding: 12px;
+  border: 1px solid rgba(50, 50, 93, 0.1);
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  background: white;
+}
+
+.result-message {
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.result-message a {
+  color: rgb(89, 111, 214);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#card-error {
+  color: rgb(105, 115, 134);
+  text-align: left;
+  font-size: 13px;
+  line-height: 17px;
+  margin-top: 12px;
+}
+
+#card-element {
+  border-radius: 4px 4px 0 0 ;
+  padding: 12px;
+  border: 1px solid rgba(50, 50, 93, 0.1);
+  height: 44px;
+  width: 100%;
+  background: white;
+}
+
+#payment-request-button {
+  margin-bottom: 32px;
+}
+
+/* Buttons and links */
+
+button {
+  background: #5469d4;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  border-radius: 0 0 4px 4px;
+  border: 0;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+  width: 100%;
+}
+
+button:hover {
+  filter: contrast(115%);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* spinner/processing state, errors */
+
+.spinner,
+.spinner:before,
+.spinner:after {
+  border-radius: 50%;
+}
+
+.spinner {
+  color: #ffffff;
+  font-size: 22px;
+  text-indent: -99999px;
+  margin: 0px auto;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  box-shadow: inset 0 0 0 2px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.spinner:before,
+.spinner:after {
+  position: absolute;
+  content: "";
+}
+
+.spinner:before {
+  width: 10.4px;
+  height: 20.4px;
+  background: #5469d4;
+  border-radius: 20.4px 0 0 20.4px;
+  top: -0.2px;
+  left: -0.2px;
+  -webkit-transform-origin: 10.4px 10.2px;
+  transform-origin: 10.4px 10.2px;
+  -webkit-animation: loading 2s infinite ease 1.5s;
+  animation: loading 2s infinite ease 1.5s;
+}
+
+.spinner:after {
+  width: 10.4px;
+  height: 10.2px;
+  background: #5469d4;
+  border-radius: 0 10.2px 10.2px 0;
+  top: -0.1px;
+  left: 10.2px;
+  -webkit-transform-origin: 0px 10.2px;
+  transform-origin: 0px 10.2px;
+  -webkit-animation: loading 2s infinite ease;
+  animation: loading 2s infinite ease;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+	
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index:-1;
+}
+
+.espacing{
+	padding-top:5vh;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;   
+  animation: imageAnimation 50s linear infinite;
+}
+
+
+.slideshow li:nth-child(1) { 
+  background-image: url(/images/dummy/ImagenParaScroll1.jpg);
+  animation-delay: 20s; 
+}
+
+.slideshow li:nth-child(2) { 
+ background-image: url(/images/dummy/ImagenParaScroll2.jpg);
+  animation-delay: 10s; 
+}
+
+.slideshow li:nth-child(3) { 
+        background-image: url(/images/dummy/ImagenParaScroll3.jpg);
+}
+
+.slideshow li:nth-child(4) {
+        background-image: url(/images/dummy/ImagenParaScroll4.jpg);
+        animation-delay: 30s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+
+  30% {
+    opacity: 0
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+}
+
+/* ESCRITORIO SUPEEERRRRR GRANDE */
+@media only screen and (min-width:1200px){
+* {
+  box-sizing: border-box;
+}
+
+#payment-form{
+  background: #e0e0e0;
+	font-size: 10px;
+	font-family: 'Red Rose', cursive;
+	width:60vw;
+}
+
+/* .infoDePedido
+{	border-radius: 15px;
+	/* display:block; */
+	/* margin-top:-23vh;
+	margin-left:1vh;
+	padding-right:-15vh;
+	margin-right:2vw;
+	margin-bottom:2vh;
+	background: #e0e0e0;
+	font-size: 25px;
+	font-family: 'Red Rose', cursive;
+	 width:49vw; */
+	/* height:70vh; 
+}*/
+
+ /* .datosEspecificos{
+	padding-left:14vw;
+}
+ */
+.TituloNoEspecifico{
+	float:left;
+	background-color:#01194b !important;
+	color:white!important;
+	padding-left:6vh;
+	margin-left:-1.1vh;;
+}
+/* 
+.nombreCLientes{
+ border-bottom-style: solid;
+ border-bottom-width:2px;	
+} */
+ 
+.disclaimer1{
+	font-size:25px;
+	margin-top:15px;
+	color:white!important;
+	width:60vw;
+	background-color:#01194b !important;
+}
+
+/* .generalesInfoPedidoHijos{
+ padding-top:15px;
+ padding-bottom:15px;	
+font-family: 'Red Rose', cursive;	
+}
+ */
+.tituloTarjeta{
+	font-size:29px;
+}
+
+.disclaimer{
+	border-radius: 15px;
+	background: #e0e0e0;
+	font-size: 20px;
+	font-family: 'Red Rose', cursive;
+	display:block;
+	width:60vw;
+	padding:8px;
+	margin-top:5vh;
+}
+
+.textoDisclaimer{
+	border-radius: 0px;
+	margin-right:45px;
+}
+
+.izquierda{
+	/* display:block;
+	margin-top:25vh; */
+	margin-left:20vw;
+	margin-top:3vh;
+}
+
+/* 
+.DireccionPedido{
+	padding-bottom:-15px;	
+	border-bottom-style: solid;
+border-bottom-width:2px;
+}
+
+.codigoPostal{
+	border-bottom-style: solid;
+border-bottom-width:2px;
+}
+
+.correoCLiente{
+	border-bottom-style: solid;
+border-bottom-width:2px;
+}
+
+.fechaPedido{
+
+} */
+
+/* body {
+  background-color:#a7a9ac;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+} */
+
+form {
+  /* width: 50vw; */
+  min-width: 500px;
+  align-self: center;
+  box-shadow: 0px 0px 0px 0.5px rgba(50, 50, 93, 0.1),
+    0px 2px 5px 0px rgba(50, 50, 93, 0.1), 0px 1px 1.5px 0px rgba(0, 0, 0, 0.07);
+  border-radius: 7px;
+  padding: 40px;
+}
+
+input {
+  border-radius: 6px;
+  margin-bottom: 6px;
+  padding: 12px;
+  border: 1px solid rgba(50, 50, 93, 0.1);
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  background: white;
+}
+
+.result-message {
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.result-message a {
+  color: rgb(89, 111, 214);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#card-error {
+  color: rgb(105, 115, 134);
+  text-align: left;
+  font-size: 13px;
+  line-height: 17px;
+  margin-top: 12px;
+}
+
+#card-element {
+  border-radius: 4px 4px 0 0 ;
+  padding: 12px;
+  border: 1px solid rgba(50, 50, 93, 0.1);
+  height: 44px;
+  width: 100%;
+  background: white;
+}
+
+#payment-request-button {
+  margin-bottom: 32px;
+}
+
+/* Buttons and links */
+
+button {
+  background: #5469d4;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  border-radius: 0 0 4px 4px;
+  border: 0;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+  width: 100%;
+}
+
+button:hover {
+  filter: contrast(115%);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* spinner/processing state, errors */
+
+.spinner,
+.spinner:before,
+.spinner:after {
+  border-radius: 50%;
+}
+
+.spinner {
+  color: #ffffff;
+  font-size: 22px;
+  text-indent: -99999px;
+  margin: 0px auto;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  box-shadow: inset 0 0 0 2px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.spinner:before,
+.spinner:after {
+  position: absolute;
+  content: "";
+}
+
+.spinner:before {
+  width: 10.4px;
+  height: 20.4px;
+  background: #5469d4;
+  border-radius: 20.4px 0 0 20.4px;
+  top: -0.2px;
+  left: -0.2px;
+  -webkit-transform-origin: 10.4px 10.2px;
+  transform-origin: 10.4px 10.2px;
+  -webkit-animation: loading 2s infinite ease 1.5s;
+  animation: loading 2s infinite ease 1.5s;
+}
+
+.spinner:after {
+  width: 10.4px;
+  height: 10.2px;
+  background: #5469d4;
+  border-radius: 0 10.2px 10.2px 0;
+  top: -0.1px;
+  left: 10.2px;
+  -webkit-transform-origin: 0px 10.2px;
+  transform-origin: 0px 10.2px;
+  -webkit-animation: loading 2s infinite ease;
+  animation: loading 2s infinite ease;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+	
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index:-1;
+}
+
+.espacing{
+	
+	padding-top:5vh;
+	
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;   
+  animation: imageAnimation 50s linear infinite;
+}
+
+
+.slideshow li:nth-child(1) { 
+  background-image: url(/images/dummy/ImagenParaScroll1.jpg);
+  animation-delay: 20s; 
+}
+
+.slideshow li:nth-child(2) { 
+ background-image: url(/images/dummy/ImagenParaScroll2.jpg);
+  animation-delay: 10s; 
+}
+
+.slideshow li:nth-child(3) { 
+        background-image: url(/images/dummy/ImagenParaScroll3.jpg);
+}
+
+.slideshow li:nth-child(4) {
+        background-image: url(/images/dummy/ImagenParaScroll4.jpg);
+        animation-delay: 30s; 
+}
+
+
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+
+  30% {
+    opacity: 0
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+	
+}
+
+/* Escritorio grandote */
+@media only screen and (min-width:992px) and (max-width:1199px){
+* {
+  box-sizing: border-box;
+}
+
+#payment-form{
+  background: #e0e0e0;
+	font-size: 10px;
+	font-family: 'Red Rose', cursive;
+	width:60vw;
+}
+
+/* .infoDePedido
+{	border-radius: 15px;
+	/* display:block; */
+	/* margin-top:-23vh;
+	margin-left:1vh;
+	padding-right:-15vh;
+	margin-right:2vw;
+	margin-bottom:2vh;
+	background: #e0e0e0;
+	font-size: 25px;
+	font-family: 'Red Rose', cursive;
+	 width:49vw; */
+	/* height:70vh; 
+}*/
+
+ /* .datosEspecificos{
+	padding-left:14vw;
+}
+ */
+.TituloNoEspecifico{
+	float:left;
+	background-color:#01194b !important;
+	color:white!important;
+	padding-left:6vh;
+	margin-left:-1.1vh;;
+}
+/* 
+.nombreCLientes{
+ border-bottom-style: solid;
+ border-bottom-width:2px;	
+} */
+ 
+.disclaimer1{
+	font-size:25px;
+	margin-top:15px;
+	color:white!important;
+	width:60vw;
+	background-color:#01194b !important;
+}
+
+/* .generalesInfoPedidoHijos{
+ padding-top:15px;
+ padding-bottom:15px;	
+font-family: 'Red Rose', cursive;	
+}
+ */
+.tituloTarjeta{
+	font-size:29px;
+}
+
+.disclaimer{
+	border-radius: 15px;
+	background: #e0e0e0;
+	font-size: 20px;
+	font-family: 'Red Rose', cursive;
+	display:block;
+	width:60vw;
+	padding:8px;
+	margin-top:5vh;
+}
+
+.textoDisclaimer{
+	border-radius: 0px;
+	margin-right:45px;
+}
+
+.izquierda{
+	/* display:block;
+	margin-top:25vh; */
+	margin-left:20vw;
+	margin-top:3vh;
+}
+
+/* 
+.DireccionPedido{
+	padding-bottom:-15px;	
+	border-bottom-style: solid;
+border-bottom-width:2px;
+}
+
+.codigoPostal{
+	border-bottom-style: solid;
+border-bottom-width:2px;
+}
+
+.correoCLiente{
+	border-bottom-style: solid;
+border-bottom-width:2px;
+}
+
+.fechaPedido{
+
+} */
+
+/* body {
+  background-color:#a7a9ac;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+} */
+
+form {
+  /* width: 50vw; */
+  min-width: 500px;
+  align-self: center;
+  box-shadow: 0px 0px 0px 0.5px rgba(50, 50, 93, 0.1),
+    0px 2px 5px 0px rgba(50, 50, 93, 0.1), 0px 1px 1.5px 0px rgba(0, 0, 0, 0.07);
+  border-radius: 7px;
+  padding: 40px;
+}
+
+input {
+  border-radius: 6px;
+  margin-bottom: 6px;
+  padding: 12px;
+  border: 1px solid rgba(50, 50, 93, 0.1);
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  background: white;
+}
+
+.result-message {
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.result-message a {
+  color: rgb(89, 111, 214);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#card-error {
+  color: rgb(105, 115, 134);
+  text-align: left;
+  font-size: 13px;
+  line-height: 17px;
+  margin-top: 12px;
+}
+
+#card-element {
+  border-radius: 4px 4px 0 0 ;
+  padding: 12px;
+  border: 1px solid rgba(50, 50, 93, 0.1);
+  height: 44px;
+  width: 100%;
+  background: white;
+}
+
+#payment-request-button {
+  margin-bottom: 32px;
+}
+
+/* Buttons and links */
+
+button {
+  background: #5469d4;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  border-radius: 0 0 4px 4px;
+  border: 0;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+  width: 100%;
+}
+
+button:hover {
+  filter: contrast(115%);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* spinner/processing state, errors */
+
+.spinner,
+.spinner:before,
+.spinner:after {
+  border-radius: 50%;
+}
+
+.spinner {
+  color: #ffffff;
+  font-size: 22px;
+  text-indent: -99999px;
+  margin: 0px auto;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  box-shadow: inset 0 0 0 2px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.spinner:before,
+.spinner:after {
+  position: absolute;
+  content: "";
+}
+
+.spinner:before {
+  width: 10.4px;
+  height: 20.4px;
+  background: #5469d4;
+  border-radius: 20.4px 0 0 20.4px;
+  top: -0.2px;
+  left: -0.2px;
+  -webkit-transform-origin: 10.4px 10.2px;
+  transform-origin: 10.4px 10.2px;
+  -webkit-animation: loading 2s infinite ease 1.5s;
+  animation: loading 2s infinite ease 1.5s;
+}
+
+.spinner:after {
+  width: 10.4px;
+  height: 10.2px;
+  background: #5469d4;
+  border-radius: 0 10.2px 10.2px 0;
+  top: -0.1px;
+  left: 10.2px;
+  -webkit-transform-origin: 0px 10.2px;
+  transform-origin: 0px 10.2px;
+  -webkit-animation: loading 2s infinite ease;
+  animation: loading 2s infinite ease;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+	
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index:-1;
+}
+
+.espacing{
+	
+	padding-top:5vh;
+	
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;   
+  animation: imageAnimation 50s linear infinite;
+}
+
+
+.slideshow li:nth-child(1) { 
+  background-image: url(/images/dummy/ImagenParaScroll1.jpg);
+  animation-delay: 20s; 
+}
+
+.slideshow li:nth-child(2) { 
+ background-image: url(/images/dummy/ImagenParaScroll2.jpg);
+  animation-delay: 10s; 
+}
+
+.slideshow li:nth-child(3) { 
+        background-image: url(/images/dummy/ImagenParaScroll3.jpg);
+}
+
+.slideshow li:nth-child(4) {
+        background-image: url(/images/dummy/ImagenParaScroll4.jpg);
+        animation-delay: 30s; 
+}
+
+
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+
+  30% {
+    opacity: 0
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+	
+}
+
+/* Escritorio pequenio y tabletas */
+@media only screen and (min-width:768px) and (max-width:991px){
+	* {
+  box-sizing: border-box;
+}
+
+#payment-form{
+    background: #e0e0e0;
+	font-size: 10px;
+	font-family: 'Red Rose';
+}
+
+.infoDePedido
+{
+	border-radius: 15px;
+	/* display:block; */
+	margin-top:-2vh;
+	margin-left:1vh;
+	padding-right:-15vh;
+	margin-bottom:2vh;
+	background: #e0e0e0;
+	font-size: 25px;
+	font-family: 'Red Rose', cursive;
+	width:87vw;
+	/* height:70vh; */
+}
+
+.datosEspecificos{
+	padding-left:3vw;
+	width: 90%;
+	font-size: 17px;
+}
+
+.TituloNoEspecifico{
+	float:left;
+	background-color:#01194b;
+	color: white !important;
+	padding-left:16vh;
+	font-size:25px !important;
+}
+
+.nombreCLientes{
+	 border-style: solid;
+	 border-width: 2px;
+}
+
+.disclaimer1{
+	width:90vw;
+	font-size:20px;
+	margin-top:15px;
+}
+	
+.disclaimerPaddingEspecial{
+	margin:5vh;	
+}
+
+.generalesInfoPedidoHijos{
+ padding-top:15px;
+ padding-bottom:15px;	
+ font-family: 'Red Rose';	
+}
+
+.tituloTarjeta{
+	font-size:29px;
+	padding:2.5vw;
+}
+
+.disclaimer{
+	background: #e0e0e0;
+	font-size: 20px;
+	font-family: 'Red Rose';
+	display:block;
+	width:90vw;
+	border-radius: 15px;
+}
+
+.textoDisclaimer{
+	padding-left:3vw;
+	font-size: 17px;
+	margin-top:-3vh;
+}
+
+.izquierda{
+	display:block;
+	margin-top:5vh;
+	margin-left:7vw;
+	margin-right:0;
+}
+
+.DireccionPedido{
+	border-left-style:solid;
+	border-right-style: solid;
+	padding-bottom:-15px;	
+	border-width: 2px;
+	border-color:#01194b;
+}
+
+.codigoPostal{
+	border-style: solid;
+	border-width: 2px;
+	border-color:#01194b;
+}
+
+.correoCLiente{
+	border-bottom-style: solid;
+	border-left-style:solid;
+	border-right-style: solid;	
+	border-width: 2px;
+	border-color:#01194b;
+}
+
+.fechaPedido{
+	border-bottom-style: solid;
+	border-left-style:solid;
+	border-right-style: solid;	
+	border-width: 2px;
+	border-color:#01194b;
+}
+
+body {
+  background-color:#a7a9ac;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  /* display: flex; */
+  justify-content: center;
+  align-content: center;
+}
+
+form {
+  width: 90vw;
+}
+
+input {
+  border-radius: 6px;
+  margin-bottom: 6px;
+  padding: 12px;
+  border: 1px solid rgba(50, 50, 93, 0.1);
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  background: white;
+}
+
+.result-message {
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.result-message a {
+  color: rgb(89, 111, 214);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#card-error {
+  color: rgb(105, 115, 134);
+  text-align: left;
+  font-size: 13px;
+  line-height: 17px;
+  margin-top: 12px;
+}
+
+#card-element {
+  border-radius: 4px 4px 0 0 ;
+  padding: 12px;
+  border: 1px solid rgba(50, 50, 93, 0.1);
+  height: 44px;
+  width: 100%;
+  background: white;
+}
+
+#payment-request-button {
+  margin-bottom: 32px;
+}
+
+/* Buttons and links */
+
+button {
+  background: #5469d4;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  border-radius: 0 0 4px 4px;
+  border: 0;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+  width: 100%;
+}
+
+button:hover {
+  filter: contrast(115%);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* spinner/processing state, errors */
+
+.spinner,
+.spinner:before,
+.spinner:after {
+  border-radius: 50%;
+}
+
+.spinner {
+  color: #ffffff;
+  font-size: 22px;
+  text-indent: -99999px;
+  margin: 0px auto;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  box-shadow: inset 0 0 0 2px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.spinner:before,
+.spinner:after {
+  position: absolute;
+  content: "";
+}
+
+.spinner:before {
+  width: 10.4px;
+  height: 20.4px;
+  background: #5469d4;
+  border-radius: 20.4px 0 0 20.4px;
+  top: -0.2px;
+  left: -0.2px;
+  -webkit-transform-origin: 10.4px 10.2px;
+  transform-origin: 10.4px 10.2px;
+  -webkit-animation: loading 2s infinite ease 1.5s;
+  animation: loading 2s infinite ease 1.5s;
+}
+
+.spinner:after {
+  width: 10.4px;
+  height: 10.2px;
+  background: #5469d4;
+  border-radius: 0 10.2px 10.2px 0;
+  top: -0.1px;
+  left: 10.2px;
+  -webkit-transform-origin: 0px 10.2px;
+  transform-origin: 0px 10.2px;
+  -webkit-animation: loading 2s infinite ease;
+  animation: loading 2s infinite ease;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+	
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index:-1;
+}
+
+.espacing{
+	padding-top:5vh;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;   
+  animation: imageAnimation 50s linear infinite;
+}
+
+
+.slideshow li:nth-child(1) { 
+  background-image: url(/images/dummy/ImagenParaScroll1.jpg);
+  animation-delay: 20s; 
+}
+
+.slideshow li:nth-child(2) { 
+ background-image: url(/images/dummy/ImagenParaScroll2.jpg);
+  animation-delay: 10s; 
+}
+
+.slideshow li:nth-child(3) { 
+        background-image: url(/images/dummy/ImagenParaScroll3.jpg);
+}
+
+.slideshow li:nth-child(4) {
+        background-image: url(/images/dummy/ImagenParaScroll4.jpg);
+        animation-delay: 30s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+
+  30% {
+    opacity: 0
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+}
+
+/* TELEFONOS NORMALES NO ENANOS COMO EL DE SANTI Y ALAN */
+@media only screen and (min-width:576px) and (max-width:767px){
+	* {
+  box-sizing: border-box;
+}
+
+#payment-form{
+    background: #e0e0e0;
+	font-size: 10px;
+	font-family: 'Red Rose';
+}
+
+.infoDePedido
+{
+	border-radius: 15px;
+	/* display:block; */
+	margin-top:-2vh;
+	margin-left:1vh;
+	padding-right:-15vh;
+	margin-bottom:2vh;
+	background: #e0e0e0;
+	font-size: 25px;
+	font-family: 'Red Rose', cursive;
+	width:87vw;
+	/* height:70vh; */
+}
+
+.datosEspecificos{
+	padding-left:3vw;
+	width: 90%;
+	font-size: 17px;
+}
+
+.TituloNoEspecifico{
+	float:left;
+	background-color:#01194b;
+	color: white !important;
+	padding-left:16vh;
+	font-size:25px !important;
+}
+
+.nombreCLientes{
+	 border-style: solid;
+	 border-width: 2px;
+}
+
+.disclaimer1{
+	width:90vw;
+	font-size:20px;
+	margin-top:15px;
+}
+	
+.disclaimerPaddingEspecial{
+	margin:5vh;	
+}
+
+.generalesInfoPedidoHijos{
+ padding-top:15px;
+ padding-bottom:15px;	
+ font-family: 'Red Rose';	
+}
+
+.tituloTarjeta{
+	font-size:29px;
+	padding:2.5vw;
+}
+
+.disclaimer{
+	background: #e0e0e0;
+	font-size: 20px;
+	font-family: 'Red Rose';
+	display:block;
+	width:90vw;
+	border-radius: 15px;
+}
+
+.textoDisclaimer{
+	padding-left:3vw;
+	font-size: 17px;
+	margin-top:-3vh;
+}
+
+.izquierda{
+	display:block;
+	margin-top:5vh;
+	margin-left:7vw;
+	margin-right:0;
+}
+
+.DireccionPedido{
+	border-left-style:solid;
+	border-right-style: solid;
+	padding-bottom:-15px;	
+	border-width: 2px;
+	border-color:#01194b;
+}
+
+.codigoPostal{
+	border-style: solid;
+	border-width: 2px;
+	border-color:#01194b;
+}
+
+.correoCLiente{
+	border-bottom-style: solid;
+	border-left-style:solid;
+	border-right-style: solid;	
+	border-width: 2px;
+	border-color:#01194b;
+}
+
+.fechaPedido{
+	border-bottom-style: solid;
+	border-left-style:solid;
+	border-right-style: solid;	
+	border-width: 2px;
+	border-color:#01194b;
+}
+
+body {
+  background-color:#a7a9ac;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  /* display: flex; */
+  justify-content: center;
+  align-content: center;
+}
+
+form {
+  width: 90vw;
+}
+
+input {
+  border-radius: 6px;
+  margin-bottom: 6px;
+  padding: 12px;
+  border: 1px solid rgba(50, 50, 93, 0.1);
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  background: white;
+}
+
+.result-message {
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.result-message a {
+  color: rgb(89, 111, 214);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#card-error {
+  color: rgb(105, 115, 134);
+  text-align: left;
+  font-size: 13px;
+  line-height: 17px;
+  margin-top: 12px;
+}
+
+#card-element {
+  border-radius: 4px 4px 0 0 ;
+  padding: 12px;
+  border: 1px solid rgba(50, 50, 93, 0.1);
+  height: 44px;
+  width: 100%;
+  background: white;
+}
+
+#payment-request-button {
+  margin-bottom: 32px;
+}
+
+/* Buttons and links */
+
+button {
+  background: #5469d4;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  border-radius: 0 0 4px 4px;
+  border: 0;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+  width: 100%;
+}
+
+button:hover {
+  filter: contrast(115%);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* spinner/processing state, errors */
+
+.spinner,
+.spinner:before,
+.spinner:after {
+  border-radius: 50%;
+}
+
+.spinner {
+  color: #ffffff;
+  font-size: 22px;
+  text-indent: -99999px;
+  margin: 0px auto;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  box-shadow: inset 0 0 0 2px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.spinner:before,
+.spinner:after {
+  position: absolute;
+  content: "";
+}
+
+.spinner:before {
+  width: 10.4px;
+  height: 20.4px;
+  background: #5469d4;
+  border-radius: 20.4px 0 0 20.4px;
+  top: -0.2px;
+  left: -0.2px;
+  -webkit-transform-origin: 10.4px 10.2px;
+  transform-origin: 10.4px 10.2px;
+  -webkit-animation: loading 2s infinite ease 1.5s;
+  animation: loading 2s infinite ease 1.5s;
+}
+
+.spinner:after {
+  width: 10.4px;
+  height: 10.2px;
+  background: #5469d4;
+  border-radius: 0 10.2px 10.2px 0;
+  top: -0.1px;
+  left: 10.2px;
+  -webkit-transform-origin: 0px 10.2px;
+  transform-origin: 0px 10.2px;
+  -webkit-animation: loading 2s infinite ease;
+  animation: loading 2s infinite ease;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+	
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index:-1;
+}
+
+.espacing{
+	padding-top:5vh;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;   
+  animation: imageAnimation 50s linear infinite;
+}
+
+
+.slideshow li:nth-child(1) { 
+  background-image: url(/images/dummy/ImagenParaScroll1.jpg);
+  animation-delay: 20s; 
+}
+
+.slideshow li:nth-child(2) { 
+ background-image: url(/images/dummy/ImagenParaScroll2.jpg);
+  animation-delay: 10s; 
+}
+
+.slideshow li:nth-child(3) { 
+        background-image: url(/images/dummy/ImagenParaScroll3.jpg);
+}
+
+.slideshow li:nth-child(4) {
+        background-image: url(/images/dummy/ImagenParaScroll4.jpg);
+        animation-delay: 30s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+
+  30% {
+    opacity: 0
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+}

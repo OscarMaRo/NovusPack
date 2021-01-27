@@ -1,0 +1,14 @@
+#footer {
+    width: 100%; 
+	background-color: #26252d;
+	margin-top: 150px;
+}
+#fot{
+	color: white;
+	padding-top: 50;
+}
+
+h6, a{
+	font-family: 'Red Rose', cursive;
+	color: white;
+}

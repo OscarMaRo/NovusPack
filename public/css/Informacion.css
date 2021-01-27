@@ -1,0 +1,797 @@
+/* este es para movil y phablet */
+@media  screen and (max-width: 575px) {
+
+.monitor{
+	display:none;
+}
+
+.row{
+	margin-right:0; !important
+}
+	
+h1{
+    color: #1b3d6b;	
+	font-size: 60px;
+	padding-top: 25px;
+	font-weight: bold;
+	text-align:center;
+}
+h3{
+    color: #1b3d6b;	
+	padding-left:15px;
+	background-color: #01194b;
+
+	color: white;
+	font-size: 20px;
+	
+	width: 66%;
+	font-weight: bold;
+}
+
+.Titulazo{
+	font-family: 'Red Rose', cursive;
+	margin-top: 30px;
+	background-color: #b4c6d9;
+	border-style: solid;
+	border-color: #1e568f;
+	margin-bottom: 40px;
+	width: 90vw;
+	margin-left: 9vw;
+	text-align:center;
+}
+
+.contacten{
+	color: #1b3d6b;	
+	margin-top: 15px;
+	font-size: 24px;
+}
+
+body{
+	/* background-image: url("https://gajahduduk.my/wp-content/uploads/2018/03/plain-light-color-for-guest-background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100vw 875vh; */
+	background-color:#e0e0e0;
+}
+
+main{
+	font-family: 'Red Rose', cursive;
+}
+
+.categoriaContacto{
+	width: 100vw;
+	margin-top: -40px;
+}
+
+.imagen{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+.iconoTel{
+	align-self: center;
+	margin-left: 20%;
+}
+.iconoEmail{
+	width: 80px;
+	height: 40px;
+	align-self: center;
+	margin-left: 300px;
+	margin-right: -320px;
+}
+.iconoDir{
+	width: 80px;
+	height: 40px;
+	align-self: center;
+	margin-left: 300px;
+	margin-right: -300px;
+}
+
+.tema {
+	color: #1b3d6b;
+	text-align:center;
+	font-size: 26px;
+	margin-top: 40px;
+	width: 100vw;
+}
+
+.descripcionCont{
+	padding-left: 40%;
+	font-size: 17px;
+	margin-top: -12vh;
+	width:100vw;
+}
+.cor{
+	margin-top:-8vh;
+	padding-left:-10vh;
+}
+
+.correo{
+	width: 60vw;
+	margin-left: 9.5vw;
+	margin-top: 5vh;
+}
+input{
+	width: 90vw;
+}
+textarea{
+	width: 90vw;
+	height: 45vh;
+}
+	
+.de{
+    background-color: #01194b;
+	width: 90vw;
+	color: white;
+}
+.chat{
+    background-color: #01194b;
+	width: 90vw;
+	color: white;
+}
+.mapa{
+	margin-left:5vw;
+	width:90vw;
+	height:50vh;
+	margin-top:5vh;
+}
+}
+
+/* ESCRITORIO SUPEEERRRRR GRANDE */
+@media only screen and (min-width:1200px) and (max-width:1595px){
+
+.movil{
+	display:none;
+}
+	
+.row{
+	margin-right:0; !important
+}
+	
+h1{
+	/* font-family: 'Bitter', serif; */
+    color: #1b3d6b;	
+	padding-left: 80px;
+	font-size: 60px;
+	padding-top: 25px;
+	margin-right: 10px;
+	width: 63%;
+	font-weight: bold;
+}
+
+.Titulazo{
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 4vh;
+	background-color: #D3D7DB;
+	border-style: solid;
+	border-color: #1e568f;
+	width: 27vw;
+	margin-left:-7vw;
+	text-align:center;
+}
+
+.contacten{
+	font-family: 'Montserrat', sans-serif;
+	color: #1b3d6b;	
+	margin-top: 15px;
+	font-size: 27px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+body{
+	/* background-image: url("https://gajahduduk.my/wp-content/uploads/2018/03/plain-light-color-for-guest-background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100vw 160vh; */
+	background-color:#e0e0e0;
+}
+
+main{
+	font-family: 'Red Rose', cursive;
+}
+
+h3{
+    color: #1b3d6b;	
+	padding-left:15px;
+	background-color: #01194b;
+
+	color: white;
+	font-size: 20px;
+	
+	width: 66%;
+	font-weight: bold;
+
+}	
+	
+.categoriaContacto{
+	width: 40vw;
+	margin-top: -40px;
+}
+
+.imagen{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+.iconoTel{
+	align-self: center;
+	margin-left: 150px;
+	margin-right: -270px;
+}
+.iconoEmail{
+	width: 80px;
+	height: 40px;
+	align-self: center;
+	margin-left: 150px;
+	margin-right: -320px;
+}
+.iconoDir{
+	width: 80px;
+	height: 40px;
+	align-self: center;
+	margin-left: 150px;
+	margin-right: -300px;
+}
+
+.tema {
+	color: #1b3d6b;
+	padding-left: 100px;
+	font-size: 30px;
+	margin-top: 40px;
+}
+
+.descripcionCont{
+	padding-left: 300px;
+	font-size: 18px;
+}
+
+.correo{
+	padding-left: 15vw;
+	margin-top: 70px;
+}
+
+.de{
+    background-color: #01194b;
+	width: 260px;
+	color: white;
+}
+.chat{
+    background-color: #01194b;
+	width: 430px;
+	color: white;
+}
+	
+.mapa{
+	margin-left:30vw;
+	width:40vw;
+	height:50vh;
+	margin-top:5vh;
+}
+}
+
+/* Escritorio grandote */
+@media only screen and (min-width:992px) and (max-width:1199px){
+
+.movil{
+	display:none;
+}
+	
+.row{
+	margin-right:0; !important
+}
+	
+	
+h1{
+	/* font-family: 'Bitter', serif; */
+    color: #1b3d6b;	
+	padding-left: 100px;
+	font-size: 50px;
+	padding-top: 25px;
+	margin-right: 10px;
+	width: 63%;
+	font-weight: bold;
+}
+	
+h3{
+      color: #1b3d6b;	
+	padding-left:15px;
+	background-color: #01194b;
+
+	color: white;
+	font-size: 20px;
+	
+	width: 66%;
+	font-weight: bold;
+
+}	
+
+.Titulazo{
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 4vh;
+	background-color: #D3D7DB;
+	border-style: solid;
+	border-color: #1e568f;
+	width: 27vw;
+	margin-left:-7vh;
+	text-align:center;
+}
+
+.contacten{
+	font-family: 'Montserrat', sans-serif;
+	color: #1b3d6b;	
+	margin-top: 15px;
+	font-size: 27px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+body{
+	background-color:#e0e0e0;
+}
+
+main{
+	font-family: 'Red Rose', cursive;
+}
+
+.categoriaContacto{
+	width: 43vw;
+	margin-top: -40px;
+}
+
+.iconoTel{
+	align-self: center;
+	margin-left: 8vw;
+	margin-right: -270px;
+}
+
+
+.tema {
+	color: #1b3d6b;
+	padding-left: 2vw;
+	font-size: 30px;
+	margin-top: 40px;
+}
+
+.descripcionCont{
+	padding-left: 28vw;
+	font-size: 17px;
+}
+
+.correo{
+	padding-left: 40px;
+	margin-top: 70px;
+}
+
+.de{
+    background-color: #01194b;
+	width: 260px;
+	color: white;
+}
+.chat{
+    background-color: #01194b;
+	width: 430px;
+	color: white;
+}
+.mapa{
+	margin-left:30vw;
+	width:40vw;
+	height:50vh;
+	margin-top:5vh;
+}
+}
+/* Escritorio pequenio y tabletas */
+@media only screen and (min-width:768px) and (max-width:991px){
+
+
+.monitor{
+	display:none;
+}
+
+.row{
+	margin-right:0; !important
+}
+	
+h1{
+    color: #1b3d6b;	
+	text-align:center;
+	font-size: 70px;
+	padding-top: 25px;
+	font-weight: bold;
+}
+h3{
+    color: #1b3d6b;	
+	padding-left:15px;
+	background-color: #01194b;
+
+	color: white;
+	font-size: 20px;
+	
+	width: 66%;
+	font-weight: bold;
+}
+
+.Titulazo{
+	font-family: 'Red Rose', cursive;
+	margin-top: 30px;
+	background-color: #b4c6d9;
+	border-style: solid;
+	border-color: #1e568f;
+	margin-bottom: 40px;
+	width: 90vw;
+	margin-left: 9vw;
+	text-align:center;
+}
+
+.contacten{
+	color: #1b3d6b;	
+	margin-top: 15px;
+	font-size: 24px;
+}
+
+body{
+	/* background-image: url("https://gajahduduk.my/wp-content/uploads/2018/03/plain-light-color-for-guest-background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100vw 875vh; */
+	background-color:#e0e0e0;
+}
+
+main{
+	font-family: 'Red Rose', cursive;
+}
+
+.categoriaContacto{
+	width: 100vw;
+	margin-top: -40px;
+}
+
+.imagen{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+.iconoTel{
+	align-self: center;
+	margin-left: 20%;
+}
+.iconoEmail{
+	width: 80px;
+	height: 40px;
+	align-self: center;
+	margin-left: 300px;
+	margin-right: -320px;
+}
+.iconoDir{
+	width: 80px;
+	height: 40px;
+	align-self: center;
+	margin-left: 300px;
+	margin-right: -300px;
+}
+
+.tema {
+	color: #1b3d6b;
+	text-align:center;
+	font-size: 35px;
+	margin-top: 40px;
+	width: 100vw;
+}
+
+.descripcionCont{
+	padding-left: 40%;
+	font-size: 25px;
+	margin-top: -12vh;
+	width: 100vw;
+}
+.cor{
+	margin-top:-8vh;
+	padding-left:-10vh;
+}
+
+.correo{
+	width: 60vw;
+	margin-left: 8vw;
+	margin-top: 5vh;
+}
+input{
+	width: 90vw;
+}
+textarea{
+	width: 90vw;
+	height: 45vh;
+}
+	
+.de{
+    background-color: #01194b;
+	width: 90vw;
+	color: white;
+}
+.chat{
+    background-color: #01194b;
+	width: 90vw;
+	color: white;
+}
+.mapa{
+	margin-left:5vw;
+	width:90vw;
+	height:50vh;
+	margin-top:5vh;
+}
+}
+/* TELEFONOS NORMALES NO ENANOS COMO EL DE SANTI Y ALAN */
+@media only screen and (min-width:576px) and (max-width:767px){
+
+
+.monitor{
+	display:none;
+}
+
+.row{
+	margin-right:0; !important
+}
+	
+h1{
+    color: #1b3d6b;	
+	padding-left: 15%;
+	font-size: 60px;
+	padding-top: 25px;
+	font-weight: bold;
+}
+h3{
+    color: #1b3d6b;	
+	padding-left:15px;
+	background-color: #01194b;
+
+	color: white;
+	font-size: 20px;
+	
+	width: 66%;
+	font-weight: bold;
+}
+
+.Titulazo{
+	font-family: 'Red Rose', cursive;
+	margin-top: 30px;
+	background-color: #b4c6d9;
+	border-style: solid;
+	border-color: #1e568f;
+	margin-bottom: 40px;
+	width: 90vw;
+	margin-left: 9vw;
+	text-align:center;
+}
+
+.contacten{
+	color: #1b3d6b;	
+	margin-top: 15px;
+	font-size: 24px;
+}
+
+body{
+	/* background-image: url("https://gajahduduk.my/wp-content/uploads/2018/03/plain-light-color-for-guest-background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100vw 875vh; */
+	background-color:#e0e0e0;
+}
+
+main{
+	font-family: 'Red Rose', cursive;
+}
+
+.categoriaContacto{
+	width: 100vw;
+	margin-top: -40px;
+}
+
+.imagen{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+.iconoTel{
+	align-self: center;
+	margin-left: 20%;
+}
+.iconoEmail{
+	width: 80px;
+	height: 40px;
+	align-self: center;
+	margin-left: 300px;
+	margin-right: -320px;
+}
+.iconoDir{
+	width: 80px;
+	height: 40px;
+	align-self: center;
+	margin-left: 300px;
+	margin-right: -300px;
+}
+
+.tema {
+	color: #1b3d6b;
+	text-align:center;
+	font-size: 26px;
+	margin-top: 40px;
+	width: 100vw;
+}
+
+.descripcionCont{
+	padding-left: 40%;
+	font-size: 17px;
+	margin-top: -12vh;
+	width: 100vw;
+}
+.cor{
+	margin-top:-8vh;
+	padding-left:-10vh;
+}
+
+.correo{
+	width: 60vw;
+	margin-left: 8vw;
+	margin-top: 5vh;
+}
+input{
+	width: 90vw;
+}
+textarea{
+	width: 90vw;
+	height: 45vh;
+}
+	
+.de{
+    background-color: #01194b;
+	width: 90vw;
+	color: white;
+}
+.chat{
+    background-color: #01194b;
+	width: 90vw;
+	color: white;
+}
+.mapa{
+	margin-left:5vw;
+	width:90vw;
+	height:50vh;
+	margin-top:5vh;
+}
+}
+
+@media only screen and (min-width:1596px){
+
+.movil{
+	display:none;
+}
+	
+h1{
+	/* font-family: 'Bitter', serif; */
+    color: #1b3d6b;	
+	padding-left: 100px;
+	font-size: 60px;
+	padding-top: 25px;
+	margin-right: 10px;
+	width: 63%;
+	font-weight: bold;
+}
+
+.Titulazo{
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 4vh;
+	background-color: #D3D7DB;
+	border-style: solid;
+	border-color: #1e568f;
+	width: 27vw;
+	margin-left:-7vw;
+	text-align:center;
+}
+
+.contacten{
+	font-family: 'Montserrat', sans-serif;
+	color: #1b3d6b;	
+	margin-top: 15px;
+	font-size: 27px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+body{
+	/* background-image: url("https://gajahduduk.my/wp-content/uploads/2018/03/plain-light-color-for-guest-background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100vw 160vh; */
+	background-color:#e0e0e0;
+}
+
+main{
+	font-family: 'Red Rose', cursive;
+}
+
+h3{
+    color: #1b3d6b;	
+	padding-left:15px;
+	background-color: #01194b;
+
+	color: white;
+	font-size: 20px;
+	
+	width: 66%;
+	font-weight: bold;
+
+}	
+	
+.categoriaContacto{
+	width: 40vw;
+	margin-top: -40px;
+}
+
+.imagen{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+.iconoTel{
+	align-self: center;
+	margin-left: 230px;
+	margin-right: -270px;
+}
+.iconoEmail{
+	width: 80px;
+	height: 40px;
+	align-self: center;
+	margin-left: 300px;
+	margin-right: -320px;
+}
+.iconoDir{
+	width: 80px;
+	height: 40px;
+	align-self: center;
+	margin-left: 300px;
+	margin-right: -300px;
+}
+
+.tema {
+	color: #1b3d6b;
+	padding-left: 200px;
+	font-size: 30px;
+	margin-top: 40px;
+}
+
+.descripcionCont{
+	padding-left: 300px;
+	font-size: 20px;
+}
+
+.correo{
+	padding-left: 18vw;
+	margin-top: 70px;
+}
+
+.de{
+    background-color: #01194b;
+	width: 260px;
+	color: white;
+}
+.chat{
+    background-color: #01194b;
+	width: 430px;
+	color: white;
+}
+	
+.mapa{
+	margin-left:30vw;
+	width:40vw;
+	height:50vh;
+	margin-top:5vh;
+}
+	
+.row{
+	margin-right:0; !important
+}
+}
