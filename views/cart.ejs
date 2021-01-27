@@ -1,0 +1,210 @@
+<head>
+	<%- include('includes/head.ejs') %>
+</head>
+<body>	
+	<% //console.log("arrayNuevito:"+arrayNuevito); %>
+	<% //console.log("arrayNuevito:"+Cantidades); %>
+	<% //console.log("arrayOriginal:"+arrayProductos); %>
+	
+	<link rel="stylesheet" type="text/css" href="/css/carrito.css">
+	
+    <%- include("includes/navbarH2F.ejs") %>
+
+	<script>
+	function recargaForzada(){
+			var f = document.createElement("FORM");
+			f.style.display = "none";
+			document.body.appendChild(f);
+
+			f.action = "/H2Flow/Carrito";
+			f.method = "POST";
+
+			var x = document.createElement("INPUT");
+			x.setAttribute("type", "text");
+			
+			var arrayObjetos = [];
+			for(var i=0;i<=sessionStorage.getItem("numObjetos");i++){	//si tienes problemas con la cantidad de objetos cambia el .lenght por sessionStorage.getItem("numObjetos")
+				arrayObjetos.push(sessionStorage.getItem("producto" + i));
+			}
+
+			x.value = arrayObjetos;
+			x.name = "arrayProductos";
+
+			var y = document.createElement("INPUT");
+			y.setAttribute("type", "text");
+			y.value = sessionStorage.getItem("numObjetos"); 
+			y.name = "contador";
+			f.appendChild(y);
+			f.appendChild(x);
+			f.submit();
+		}
+	</script>
+	
+<main class="">
+	<div class="ContenidosDelCarrito">
+		<article class="left">
+			<header class="PresentacionCart">
+				<h1 class="Titulazo"><svg width="2em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" d="M11.354 5.646a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+</svg> Sus compras:</h1>
+	</header>
+		<div class="card__content content_card">	
+			<div class="gridMejorado">
+				<%var precioTotal = 0 %>
+				<%if(arrayNuevito != undefined) {%>
+					<%for (var i = 0; i < arrayNuevito.length; i++) { %>
+						<%if(arrayNuevito[i] != undefined) {%>
+						<% precioTotal = precioTotal + arrayNuevito[i].Precio*Cantidades[i] %>
+						<svg width="2em" class="bi bi-x-square closeButton1 lorem" type="button" onclick="eliminarToda('<%= arrayNuevito[i]._id%>')" height="2em" viewBox="0 0 16 16" class="" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+	  <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+	  <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+	</svg>
+						<!-- <span class="closeButton1 lorem">&#x2717;</span> -->
+						<h3 class="titulo"><%='Producto: '+arrayNuevito[i].Botella%> <%=arrayNuevito[i].color%> de <%=arrayNuevito[i].Volumen%> ml</h3>
+						<!--<article class="card product-item">-->
+						<div class="ProductoInvidualMOstrado">
+							<div class="infoBasica">
+								<p><img width = "10vw" height = "200vh" class="imagen" src='<%=arrayNuevito[i].LinksImagenes[0] %>'></p>
+								<h5 class="description">Descripcion: <%= arrayNuevito[i].Caracteristicas %></h5>
+							</div>
+							<h3 class="precio2">Costo: $<%= arrayNuevito[i].Precio %></h3>	
+							<div class="cantidad2">
+								<h2 class="precio">Costo: $<%=arrayNuevito[i].Precio%></h2>	
+								<h2 style="font-size:25px;" class="Can">Cantidad:</h2>
+								<svg  id="eliminar" class="sumaYresta"  type="button" onclick="eliminarClick('<%= arrayNuevito[i]._id%>');" width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-dash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.5-.5z"/>
+	</svg> <h2 class="cantidadbackground"><%=Cantidades[i]%></h2> 
+							<!-- <div> -->
+								<svg id="agregar" onclick="guardarCarrro('<%= arrayNuevito[i]._id%>');" class="sumaYresta bi bi-plus" width="2em" type="button" height="2em" viewBox="0 0 16 16"   fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path  fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"></path>
+	  <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"></path>
+	</svg>					
+								<!-- </div>	-->
+							</div>	
+						</div>
+						<div class="separacion"></div>
+					<!--</article>-->
+						<% } %>
+					<%}%>
+				<%}%>
+			</div>
+		</div>
+	</article>
+	<article class=" product-item checkout" class="tabla">
+		<header class="cantidad">
+			<h2 class="total">Productos: <%=contar%></h2>
+		</header>				
+		<% var envio = 15%>
+		<div class="card__content Cobro">
+			<div class="Cobro">
+				<h5 class="Subtotal"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-diamond" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M8.361 1.17a.51.51 0 0 0-.722 0L4.766 4.044 8 7.278l3.234-3.234L8.361 1.17zm3.595 3.596L8.722 8l3.234 3.234 2.873-2.873c.2-.2.2-.523 0-.722l-2.873-2.873zm-.722 7.19L8 8.722l-3.234 3.234 2.873 2.873c.2.2.523.2.722 0l2.873-2.873zm-7.19-.722L7.278 8 4.044 4.766 1.17 7.639a.511.511 0 0 0 0 .722l2.874 2.873zM6.917.45a1.531 1.531 0 0 1 2.166 0l6.469 6.468a1.532 1.532 0 0 1 0 2.166l-6.47 6.469a1.532 1.532 0 0 1-2.165 0L.45 9.082a1.531 1.531 0 0 1 0-2.165L6.917.45z"/>
+</svg> Subtotal: $<%=precioTotal%></h5>
+				<h5 class="totalReal"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-diamond" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M8.361 1.17a.51.51 0 0 0-.722 0L4.766 4.044 8 7.278l3.234-3.234L8.361 1.17zm3.595 3.596L8.722 8l3.234 3.234 2.873-2.873c.2-.2.2-.523 0-.722l-2.873-2.873zm-.722 7.19L8 8.722l-3.234 3.234 2.873 2.873c.2.2.523.2.722 0l2.873-2.873zm-7.19-.722L7.278 8 4.044 4.766 1.17 7.639a.511.511 0 0 0 0 .722l2.874 2.873zM6.917.45a1.531 1.531 0 0 1 2.166 0l6.469 6.468a1.532 1.532 0 0 1 0 2.166l-6.47 6.469a1.532 1.532 0 0 1-2.165 0L.45 9.082a1.531 1.531 0 0 1 0-2.165L6.917.45z"/>
+</svg> Impuestos: $<%=Math.round(precioTotal*0.16)%></h5>
+				<h5 class="totalReal"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-diamond" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M8.361 1.17a.51.51 0 0 0-.722 0L4.766 4.044 8 7.278l3.234-3.234L8.361 1.17zm3.595 3.596L8.722 8l3.234 3.234 2.873-2.873c.2-.2.2-.523 0-.722l-2.873-2.873zm-.722 7.19L8 8.722l-3.234 3.234 2.873 2.873c.2.2.523.2.722 0l2.873-2.873zm-7.19-.722L7.278 8 4.044 4.766 1.17 7.639a.511.511 0 0 0 0 .722l2.874 2.873zM6.917.45a1.531 1.531 0 0 1 2.166 0l6.469 6.468a1.532 1.532 0 0 1 0 2.166l-6.47 6.469a1.532 1.532 0 0 1-2.165 0L.45 9.082a1.531 1.531 0 0 1 0-2.165L6.917.45z"/>
+</svg>Costo envio: $<%=Math.round(envio)%></h5>
+				<h5 class="totalReal"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-diamond" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M8.361 1.17a.51.51 0 0 0-.722 0L4.766 4.044 8 7.278l3.234-3.234L8.361 1.17zm3.595 3.596L8.722 8l3.234 3.234 2.873-2.873c.2-.2.2-.523 0-.722l-2.873-2.873zm-.722 7.19L8 8.722l-3.234 3.234 2.873 2.873c.2.2.523.2.722 0l2.873-2.873zm-7.19-.722L7.278 8 4.044 4.766 1.17 7.639a.511.511 0 0 0 0 .722l2.874 2.873zM6.917.45a1.531 1.531 0 0 1 2.166 0l6.469 6.468a1.532 1.532 0 0 1 0 2.166l-6.47 6.469a1.532 1.532 0 0 1-2.165 0L.45 9.082a1.531 1.531 0 0 1 0-2.165L6.917.45z"/>
+</svg>Total: $<%=Math.round((precioTotal*1.16)+envio)%></h5>
+			</div>
+			<div class="card__actions Cobro">
+				<a onclick="sinCheckout()" class="btn">Checkout</a>
+			</div> 
+		</div>
+	</article>
+	</div>
+</main>
+	
+<script>
+	function guardarCarrro(Idprodcuto){
+		
+	// de esta manera se guarda info del server en el cache	   
+	if(!sessionStorage.getItem("numObjetos")){	
+	sessionStorage.setItem('numObjetos', "1");
+	}else{ sessionStorage.setItem('numObjetos',Number(sessionStorage.getItem("numObjetos"))+1);
+	sessionStorage.setItem('producto' + sessionStorage.getItem("numObjetos"), Idprodcuto);}		
+	recargaForzada();
+	
+	}
+	
+	
+	
+	
+</script>
+	
+<script>
+	function eliminarToda(item){
+		
+		var contador=0;	
+		var cuantasMenos=0;
+		var band=0;
+		var sobrevivientes=[];
+		for(var i=0;i<=sessionStorage.getItem("numObjetos");i++){	
+			string1=String(item);
+			string2=String(sessionStorage.getItem('producto' + (i)));
+			if(string1===string2){
+				 alert("eliminando"+sessionStorage.getItem('producto' + i));
+				if(cuantasMenos===0){contador=i;}
+				sessionStorage.removeItem('producto' + i);
+				cuantasMenos++;
+			}else{  sobrevivientes.push(sessionStorage.getItem('producto' + i));         }
+		}
+		sessionStorage.setItem('numObjetos',Number(sessionStorage.getItem("numObjetos"))-cuantasMenos);
+		for(var i=1;i<=sessionStorage.getItem("numObjetos");i++){	
+			sessionStorage.setItem('producto' + (i), sobrevivientes[i]);
+		}
+	recargaForzada();
+	}
+
+	function sinCheckout(){
+		if(sessionStorage.length>1){       //Se puede cambiar el sessionStorage por el contador 
+			// self.location("/Checkout");//Falta este pedo en ventana actual
+			window.open("/H2Flow/Checkout","_self");
+		}else{
+			alert("No se puede acceder al checkout con un carrito vacio");
+		}
+	}
+
+	
+		function eliminarClick(item){
+		var contador=0;	
+		for(var i=1;i<=sessionStorage.getItem("numObjetos");i++){	
+			string1=String(item);
+			string2=String(sessionStorage.getItem('producto' + (i)));
+			if(string1===string2){
+				contador=i;
+				sessionStorage.removeItem('producto' + i);
+				sessionStorage.setItem('numObjetos',Number(sessionStorage.getItem("numObjetos"))-1);
+				break;
+			}
+		}
+		// var victima = "producto" + item;
+		// sessionStorage.removeItem(victima);
+		for(var i=contador;i<=sessionStorage.getItem("numObjetos");i++){
+			sessionStorage.setItem('producto' + i, sessionStorage.getItem('producto' + (i+1)));	
+		}
+		recargaForzada();
+	}
+
+	
+	
+</script>
+	
+<script> 	
+	var NumNuevo = Number(sessionStorage.getItem("numObjetos"));
+	var NumViejo = Number("<%=contar%>");  
+	if( NumViejo < NumNuevo){
+		recargaForzada();
+
+	}
+</script>
+	
+</body>
+
+<%- include("includes/end.ejs") %>
+	

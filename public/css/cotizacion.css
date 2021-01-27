@@ -1,0 +1,176 @@
+/* este es para movil y phablet */
+@media  screen and (max-width: 575px) {
+
+h3{
+    color: #1b3d6b;	
+	padding-left:15px;
+	background-color: #01194b;
+	color: white;
+	font-size: 20px;
+	width: 100%;
+	font-weight: bold;
+}
+
+body{
+	/* background-image: url("https://gajahduduk.my/wp-content/uploads/2018/03/plain-light-color-for-guest-background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100vw 875vh; */
+	background-color:#e0e0e0;
+}
+
+main{
+	font-family: 'Red Rose', cursive;
+}
+
+.correo{
+	width: 60vw;
+	padding: 5%;
+	margin-top: 5vh;
+}
+input{
+	width: 90vw;
+}
+textarea{
+	width: 90vw;
+	height: 45vh;
+}
+	
+.de{
+    background-color: #01194b;
+	width: 90vw;
+	color: white;
+}
+.chat{
+    background-color: #01194b;
+	width: 90vw;
+	color: white;
+}
+}
+
+/* ESCRITORIO SUPEEERRRRR GRANDE */
+@media only screen and (min-width:1200px){
+
+body{
+	/* background-image: url("https://gajahduduk.my/wp-content/uploads/2018/03/plain-light-color-for-guest-background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100vw 160vh; */
+	background-color:#e0e0e0;
+}
+
+main{
+	font-family: 'Red Rose', cursive;
+}
+
+h3{
+    color: #1b3d6b;	
+	padding-left:15px;
+	background-color: #01194b;
+	color: white;
+	font-size: 40px;
+	width: 100%;
+	font-weight: bold;
+	text-align: center;
+}	
+
+.correo{
+	padding-left: 40px;
+	margin-top: 50px;
+	margin-left:30vw;
+	width: 40vw;
+	text-align:center;
+}
+
+.de{
+    background-color: #01194b;
+	width: 40vw;
+	color: white;
+	text-align:center;
+}
+.chat{
+    background-color: #01194b;
+	width:  40vw;
+	color: white;
+}
+	
+#form{
+	width:40vw;
+}
+	
+#message{
+	width:40vw;
+}
+	
+.boton{
+	font-size: 30px; 
+}
+}
+
+/* Escritorio grandote */
+@media only screen and (min-width:992px) and (max-width:1199px){
+
+h3{
+	color: #1b3d6b;	
+	padding-left:15px;
+	background-color: #01194b;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	width: 100%;
+	font-weight: bold;
+}
+
+body{
+	background-color:#e0e0e0;
+}
+
+main{
+	font-family: 'Red Rose', cursive;
+}
+
+.correo{
+	/* padding-left: 40px; */
+	margin-top: 50px;
+	margin-left:30vw;
+	width: 40vw;
+	text-align:center;
+}
+
+.de{
+    background-color: #01194b;
+	width: 40vw;
+	color: white;
+	text-align:center;
+}
+.chat{
+    background-color: #01194b;
+	width:  40vw;
+	color: white;
+}
+	
+#form{
+	width:40vw;
+}
+	
+#message{
+	width:40vw;
+}
+	
+.boton{
+	font-size: 30px; 
+	color:black;
+}
+	
+}
+/* Escritorio pequenio y tabletas */
+@media only screen and (min-width:768px) and (max-width:991px){
+	
+}
+/* TELEFONOS NORMALES NO ENANOS COMO EL DE SANTI Y ALAN */
+@media only screen and (min-width: 576px) and (max-width:991px) {
+	
+}
+
+/* Escritorio pequenio y tabletas */
+@media only screen and (min-width:576px) and (max-width:767px){
+	
+}

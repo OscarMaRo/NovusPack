@@ -1,0 +1,15 @@
+{
+  "name": "refs",
+  "version": "1.0.0",
+  "description": "package.json demo",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Runbed",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {}
+}
